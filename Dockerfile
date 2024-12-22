@@ -10,6 +10,8 @@ COPY . .
 
 COPY package*.json *-lock.yaml ./
 
+COPY assets/ /app/assets/
+
 RUN apk add --no-cache --virtual .gyp \
         python3 \
         make \
